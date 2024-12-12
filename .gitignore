@@ -1,0 +1,36 @@
+# Node.js dependencies
+/node_modules/
+
+# VS Code settings and extensions
+.vscode/
+
+# Build output
+/dist/
+/out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+*.env
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# JetBrains IDEs (optional, if you use JetBrains)
+.idea/
+
+# Other
+*.log
