@@ -1,54 +1,76 @@
 {
-  "name": "flutter-localizations-helper",
-  "displayName": "Flutter Localizations Helper",
-  "description": "A VS Code extension to help manage localization in Flutter apps",
-  "version": "1.0.0",
-  "publisher": "your-username",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "activationEvents": [
-    "onCommand:flutter-localizations-helper.extractKey",
-    "onCommand:flutter-localizations-helper.addNewLanguage"
-  ],
-  "main": "./src/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "flutter-localizations-helper.extractKey",
-        "title": "Extract Localization Key"
-      },
-      {
-        "command": "flutter-localizations-helper.addNewLanguage",
-        "title": "Add New Language"
-      }
-    ],
-    "menus": {
-      "editor/context": [
-        {
-          "command": "flutter-localizations-helper.extractKey",
-          "when": "editorTextFocus && editorHasSelection",
-          "group": "navigation"
-        }
-      ]
+    "name": "flutter-localizations-helper",
+    "displayName": "Flutter Localizations Helper",
+    "description": "A VS Code extension to help manage localization in Flutter apps",
+    "version": "1.0.0",
+    "publisher": "ShailendraRajput",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MrShailandra/flutter-localizations-helper-vscode.git"
     },
-    "keybindings": [
-      {
-        "command": "flutter-localizations-helper.extractKey",
-        "key": "cmd+shift+l",
-        "mac": "cmd+shift+l",
-        "win": "ctrl+shift+l",
-        "when": "editorTextFocus && editorHasSelection"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "echo 'No compile step needed for JS'",
-    "test": "echo 'No tests yet'"
-  },
-  "dependencies": {
-    "vscode": "^1.1.0"
-  },
-  "devDependencies": {}
+    "categories": [
+        "Other",
+        "Programming Languages",
+        "Snippets"
+    ],
+    "keywords": [
+        "Flutter",
+        "Localization",
+        "Translation",
+        "GetX Localization",
+        "i18n",
+        "Translation",
+        "JSON",
+        "Automation"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MrShailandra/flutter-localizations-helper-vscode/issues"
+    },
+    "homepage": "https://github.com/MrShailandra/flutter-localizations-helper-vscode#readme",
+
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "activationEvents": [
+        "onCommand:flutter-localizations-helper.extractKey",
+        "onCommand:flutter-localizations-helper.addNewLanguage"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "commands": [{
+                "command": "flutter-localizations-helper.extractKey",
+                "title": "Extract Localization Key"
+            },
+            {
+                "command": "flutter-localizations-helper.addNewLanguage",
+                "title": "Add New Language"
+            }
+        ],
+        "menus": {
+            "editor/context": [{
+                "command": "flutter-localizations-helper.extractKey",
+                "when": "editorTextFocus && editorHasSelection",
+                "group": "navigation"
+            }]
+        },
+        "keybindings": [{
+            "command": "flutter-localizations-helper.extractKey",
+            "key": "cmd+shift+l",
+            "mac": "cmd+shift+l",
+            "win": "ctrl+shift+l",
+            "when": "editorTextFocus && editorHasSelection"
+        }]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "echo 'No compile step needed for JS'",
+        "test": "echo 'No tests yet'"
+    },
+    "dependencies": {
+        "vscode": "^1.1.0",
+        "fs": "^0.0.1-security",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {}
 }
